@@ -18,8 +18,8 @@
     type="text/css"
   />
   <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
-  <head> 
-    <title> Hello :D</title>
+  <head>
+    <title>Hello :D</title>
   </head>
   <style>
     body {
@@ -42,7 +42,7 @@
       />
     </div>
 
-<div id="Content">
+    <div id="Content">
       <div class="image">
         <img
           src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
@@ -58,88 +58,86 @@
       </div>
     </div>
 
-<script type="text/javascript">
+    <script type="text/javascript">
       function play() {
-        var audio = new Audio(
-          "https://sndup.net/tqdx/d"
-        )
-        audio.play()
+        var audio = new Audio("https://sndup.net/tqdx/d");
+        audio.play();
       }
-const swals = Swal.mixin({
+      const swals = Swal.mixin({
         allowOutsideClick: false,
         cancelButtonColor: "#FF0040",
-      })
+      });
       const swalsy = Swal.mixin({
         confirmButtonText: "Iya",
         allowOutsideClick: false,
-      })
+      });
       const swalst = Swal.mixin({
         allowOutsideClick: false,
         showConfirmButton: false,
         timer: 4000,
         timerProgressBar: true,
-      })
+      });
 
-async function mulaitanya() {
-  // Mendapatkan nilai dari parameter 'title' dalam URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const titleParam = urlParams.get('title');
+      async function mulaitanya() {
+        // Mendapatkan nilai dari parameter 'title' dalam URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const titleParam = urlParams.get("title");
 
-  // Menyiapkan nilai default untuk judul jika parameter tidak ada
-  const defaultTitle = "Halo :D kamu bisa klik tombol dibawah ya";
+        // Menyiapkan nilai default untuk judul jika parameter tidak ada
+        const defaultTitle = "Halo :D kamu bisa klik tombol dibawah ya";
 
-  // Menggunakan nilai dari URL parameter atau default jika tidak ada
-  const title = titleParam || defaultTitle;
+        // Menggunakan nilai dari URL parameter atau default jika tidak ada
+        const title = titleParam || defaultTitle;
 
-  // Melakukan penggantian kata "kamu" dengan kata dari URL parameter
-  const modifiedTitle = title.replace(/kamu/g, titleParam);
+        // Melakukan penggantian kata "kamu" dengan kata dari URL parameter
+        const modifiedTitle = title.replace(/kamu/g, titleParam);
 
-  var { isConfirmed: tanyawal } = await Swal.fire({
-    title: modifiedTitle,
-    imageUrl: "https://media.tenor.com/Ej3BJBhwt_0AAAAM/cute-kitty.gif",
-    imageWidth: 120,
-    imageHeight: 120,
-    confirmButtonText: "Okay",
-    allowOutsideClick: false,
-    showCancelButton: false,
-  })
-}
-        if (tanyawal) {
-          play()
-          kuis()
-        }
+        var { isConfirmed: tanyawal } = await Swal.fire({
+          title: modifiedTitle,
+          imageUrl: "https://media.tenor.com/Ej3BJBhwt_0AAAAM/cute-kitty.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+          confirmButtonText: "Okay",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        });
       }
-async function kuis() {
+      if (tanyawal) {
+        play();
+        kuis();
+      }
+      async function kuis() {
         await swalst.fire({
           title: "cape banget ya hari ini? :(",
           imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
           imageWidth: 120,
           imageHeight: 120,
-        })
+        });
         await swalst.fire({
           title: "Its okay, selamat ya udah bisa lewatin semua hal di hari ini",
           imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
           imageWidth: 120,
           imageHeight: 120,
-        })
+        });
         await swalst.fire({
           title: "kalo pelajarannya susah, tanya aku aja ya",
           imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
           imageWidth: 120,
           imageHeight: 120,
-        })
+        });
         await swalst.fire({
           title: "Maaf aku ga bisa banyak bantu kamu &#129402;",
           imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
           imageWidth: 120,
           imageHeight: 120,
-        })
-        text = "aku seneng bangettt bisa kenal kamu "
-        emotnama = "&#10084;"
-        text2 = "Jaga diri baik-baik... Jangan sedih, aku bakal nunggu chat dari kamu hehe :)"
-        showDiv()
+        });
+        text = "aku seneng bangettt bisa kenal kamu ";
+        emotnama = "&#10084;";
+        text2 =
+          "Jaga diri baik-baik... Jangan sedih, aku bakal nunggu chat dari kamu hehe :)";
+        showDiv();
       }
-      mulaitanya()
+      mulaitanya();
     </script>
   </body>
 </html>
