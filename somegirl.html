@@ -81,15 +81,29 @@ const swals = Swal.mixin({
       })
 
 async function mulaitanya() {
-        var { isConfirmed: tanyawal } = await swals.fire({
-          title: `Halo :D kamu bisa klik tombol dibawah ya`,
-          imageUrl: "https://media.tenor.com/Ej3BJBhwt_0AAAAM/cute-kitty.gif",
-          imageWidth: 120,
-          imageHeight: 120,
-          confirmButtonText: "Okay",
-          allowOutsideClick: false,
-          showCancelButton: false,
-        })
+  // Mendapatkan nilai dari parameter 'title' dalam URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const titleParam = urlParams.get('title');
+
+  // Menyiapkan nilai default untuk judul jika parameter tidak ada
+  const defaultTitle = "Halo :D kamu bisa klik tombol dibawah ya";
+
+  // Menggunakan nilai dari URL parameter atau default jika tidak ada
+  const title = titleParam || defaultTitle;
+
+  // Melakukan penggantian kata "kamu" dengan kata dari URL parameter
+  const modifiedTitle = title.replace(/kamu/g, titleParam);
+
+  var { isConfirmed: tanyawal } = await Swal.fire({
+    title: modifiedTitle,
+    imageUrl: "https://media.tenor.com/Ej3BJBhwt_0AAAAM/cute-kitty.gif",
+    imageWidth: 120,
+    imageHeight: 120,
+    confirmButtonText: "Okay",
+    allowOutsideClick: false,
+    showCancelButton: false,
+  })
+}
         if (tanyawal) {
           play()
           kuis()
