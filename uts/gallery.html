@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
-    <iframe
-      src="header.html"
-      style="border: 0px; margin-bottom: -50px; width: 100%"
-    ></iframe>
-    <div class="container">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <iframe
+         src="header.html"
+         style="border: 0px; margin-bottom: -50px; width: 100%"
+         ></iframe>
+      <div class="container">
       <div class="sidebar" style="width: 25%; height: 200%;">
-        
-        <div class="menu-box">
-          <h3>Menu</h3>
-          <ul>
-            <li><a class="oval-button" href="index.html">About Us</a></li>
-            <li><a class="oval-button" href="index.html#produk">Produk</a></li>
-            <li><a class="oval-button" href="gallery.html">Gallery</a></li>
-            <li><a class="oval-button" href="contact.html">Hubungi Kami</a></li>
-          </ul>
-        </div>
-
+         <div class="menu-box">
+            <h3>Menu</h3>
+            <ul>
+               <li><a class="oval-button" href="index.html">About Us</a></li>
+               <li><a class="oval-button" href="index.html#produk">Produk</a></li>
+               <li><a class="oval-button" href="gallery.html">Gallery</a></li>
+               <li><a class="oval-button" href="contact.html">Hubungi Kami</a></li>
+            </ul>
+         </div>
       </div>
-      
-        <style>
-          .teamPhoto {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-            margin-top: 100px;
-          }
-
-          .slide {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 10px;
-          }
-
-          .slide img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border: 2px black;
-          }
-
-            .image-border img {
-                border: 2px solid #000; /* Add a 2px solid black border to the container */
-                display: inline-block; /* Make the container inline block to fit the content */
-             }
-
-        </style>
-
-        <h2 id="gallery" style="margin: 50px;">Gallery</h2>
-        <div class="teamPhoto">
-          <div class="slide" style="text-align: center">
+      <style>
+         .teamPhoto {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 10px;
+         margin-top: 100px;
+         }
+         .slide {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         grid-gap: 10px;
+         }
+         .slide img {
+         width: 250px;
+         height: 250px;
+         object-fit: cover;
+         border: 2px black;
+         }
+         .image-border img {
+         border: 2px solid #000; /* Add a 2px solid black border to the container */
+         display: inline-block; /* Make the container inline block to fit the content */
+         }
+         .bottom-image {
+         grid-column: 1 / span 3; /* Menentukan foto paling bawah untuk mengambil seluruh baris. */
+         }
+      </style>
+      <h2 id="gallery" style="margin: 50px;">Gallery</h2>
+      <!-- <div class="teamPhoto">
+         <div class="slide" style="text-align: center">
+           <div class="image-border">
+             <img src="gambar/bca.jpg" alt="Image Not Found" />
+             <p>Farsya Aghniya</p>
+           </div>
+           <div class="image-border">
+             <img src="gambar/bca.jpg" alt="Image Not Found" />
+             <p>Hana Fakhirah Azra</p>
+           </div>
+           <div class="image-border">
+             <img src="gambar/mandiri.jpg" alt="Image Not Found" />
+             <p>Najwa Fahira Hafsah</p>
+           </div>
+         </div>
+         <div class="image-border" style="width: 750px; height: 250px;">
+               <img src="gambar/bca.jpg" alt="">
+           </div>
+         </div> -->
+      <div class="teamPhoto">
+         <div class="slide" style="text-align: center">
+            <!-- Foto pertama -->
             <div class="image-border">
-              <img src="gambar/bca.jpg" alt="Image Not Found" />
+               <img src="gambar/bca.jpg" alt="Image Not Found" />
+               <p>Farsya Aghniya</p>
             </div>
+            <!-- Foto kedua -->
             <div class="image-border">
-              <img src="gambar/bca.jpg" alt="Image Not Found" />
+               <img src="gambar/bca.jpg" alt="Image Not Found" />
+               <p>Hana Fakhirah Azra</p>
             </div>
+            <!-- Foto ketiga -->
             <div class="image-border">
-              <img src="gambar/mandiri.jpg" alt="Image Not Found" />
+               <img src="gambar/mandiri.jpg" alt="Image Not Found" />
+               <p>Najwa Fahira Hafsah</p>
             </div>
-            <div>
-                <p>Farsya Aghniya</p>
+            <!-- Foto paling bawah -->
+            <div class="image-border bottom-image">
+               <img src="gambar/bca.jpg" alt="" style="width: 774px;">
             </div>
-            <div>
-                <p>Hana Fakhirah Azra</p>
-            </div>
-            <div>
-                <p>Najwa Fahira Hafsah</p>
-            </div>
-            <!-- Tambahkan 3 gambar lagi di sini -->
-          </div>
-        </div>
-  </body>
+         </div>
+      </div>
+   </body>
 </html>
