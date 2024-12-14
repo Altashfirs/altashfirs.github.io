@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 16px;
     height:100vh;
-    background: #ffc0cb;
+    background: #78c0e0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@ body {
     display: none;
 }
 .front_text, .inside_text{
-    color: #A60657;
+    color: #78c0e0;
     font-family: 'Brush Script MT', cursive;
     font-size: 24px;
 }
@@ -52,7 +52,7 @@ body {
     padding: 16px;
     background-color: whitesmoke;
     text-align: center;
-    box-shadow: 0 24px 40px -8px #ff1493;
+    box-shadow: 0 24px 40px -8px #449dd1;
     width: 450px;
     height: 850px;
 }
@@ -64,7 +64,7 @@ body {
     padding: 16px;
     background-color: whitesmoke;
     text-align: center;
-    box-shadow: 0 24px 40px -8px #ff1493;
+    box-shadow: 0 24px 40px -8px #449dd1;
     width: 450px;
     height: 850px;
     z-index:-1;
