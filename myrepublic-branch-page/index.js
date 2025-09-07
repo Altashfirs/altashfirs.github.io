@@ -59,28 +59,28 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            name: 'Fast', speed: '100 Mbps', originalSpeed: '50 Mbps', price: '277.500', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_02_c4a886f673.webp', features: [
+                            name: 'Fast', speed: '100 Mbps', originalSpeed: '50 Mbps', price: '278.610', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_02_c4a886f673.webp', features: [
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/zap_fast_Line_1955929a77.svg', text: 'Gratis Upgrade Speed 100 Mbps' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/bar_chart_06_Duotone_27c574d947.png', text: 'Internet UNLIMITED' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/Asset_8_300x_8_9b201708d5.png', text: 'Include ONT/Modem' },
                             ]
                         },
                         {
-                            name: 'Nova', speed: '249 Mbps', originalSpeed: '100 Mbps', price: '333.000', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_03_8675fb4207.webp', features: [
+                            name: 'Nova', speed: '200 Mbps', originalSpeed: '100 Mbps', price: '333.000', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_03_8675fb4207.webp', features: [
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/zap_fast_Line_1955929a77.svg', text: 'Gratis Upgrade Speed 200 Mbps' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/bar_chart_06_Duotone_27c574d947.png', text: 'Internet UNLIMITED' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/Asset_8_300x_8_9b201708d5.png', text: 'Include ONT/Modem' },
                             ]
                         },
                         {
-                            name: 'MyGamer', speed: '399 Mbps', originalSpeed: '250 Mbps', price: '444.000', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_04_27524acf1c.webp', features: [
+                            name: 'MyGamer', speed: '350 Mbps', originalSpeed: '250 Mbps', price: '444.000', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_04_27524acf1c.webp', features: [
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/zap_fast_Line_1955929a77.svg', text: 'Gratis Upgrade Speed 350 Mbps' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/bar_chart_06_Duotone_27c574d947.png', text: 'Internet UNLIMITED' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/Asset_7_300x_8_85c8d0bfc1.png', text: 'IP Public Static' },
                             ]
                         },
                         {
-                            name: 'Prime', speed: '649 Mbps', originalSpeed: '500 Mbps', price: '555.000', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_05_ecbbdc7c9c.webp', features: [
+                            name: 'Prime', speed: '500 Mbps', price: '555.000', period: '/ Bulan', vatText: 'Harga termasuk PPN 11%', image: 'https://www.myrepublic.co.id/img/gothel/uploads/Design_Thumbnail_Produk_05_ecbbdc7c9c.webp', features: [
                                 { type: 'ott', logo: 'https://www.myrepublic.co.id/img/gothel/uploads/VIDIO_LITE_LOGO_COLOR_5837fee53b.png', name: 'Vidio Lite' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/bar_chart_06_Duotone_27c574d947.png', text: 'Internet UNLIMITED' },
                                 { type: 'normal', icon: 'https://www.myrepublic.co.id/img/gothel/uploads/Asset_8_300x_8_9b201708d5.png', text: 'Include ONT/Modem' },
@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <span class="price-period">${plan.period}</span>
                         </div>
                         <p class="plan-terms">${plan.vatText}</p>
-                        <a href="https://wa.me/628119900777?text=Halo%20MyRepublic,%20saya%20tertarik%20dengan%20paket%20${encodeURIComponent(plan.name)}%20${encodeURIComponent(currentSelection.planType)}%20untuk%20${encodeURIComponent(currentSelection.customerType)}%20dengan%20durasi%20${encodeURIComponent(currentSelection.duration)}%20bulan.%20Bisa%20bantu%20saya%3F" target="_blank" rel="noopener" aria-label="Chat with sales about the ${plan.name} plan">
+                        <a href="https://wa.me/+6287730323641?text=Halo%20MyRepublic,%20saya%20tertarik%20dengan%20paket%20${encodeURIComponent(plan.name)}%20${encodeURIComponent(currentSelection.planType)}%20untuk%20${encodeURIComponent(currentSelection.customerType)}%20dengan%20durasi%20${encodeURIComponent(currentSelection.duration)}%20bulan.%20Bisa%20bantu%20saya%3F" target="_blank" rel="noopener" aria-label="Chat with sales about the ${plan.name} plan">
                             <button class="btn btn-outline">Chat Sales</button>
                         </a>
                     </div>
